@@ -1,3 +1,5 @@
+# https://leetcode.com/problems/maximum-subarray/?envType=study-plan&id=data-structure-i
+
 class Solution:
     def maxSubArray(self, nums: List[int]) -> int:
 
