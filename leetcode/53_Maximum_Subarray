@@ -1,0 +1,10 @@
+class Solution:
+    def maxSubArray(self, nums: List[int]) -> int:
+
+        cnt_sub = largest_sub = nums[0]
+        
+        for n in nums[1:]:       
+            cnt_sub = max(n, cnt_sub + n)
+            largest_sub = max(largest_sub, cnt_sub)
+
+        return largest_sub
