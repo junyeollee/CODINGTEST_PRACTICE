@@ -1,0 +1,9 @@
+# https://leetcode.com/problems/maximum-subarray/?envType=study-plan&id=data-structure-i
+class Solution:
+    def containsDuplicate(self, nums: List[int]) -> bool:
+        table = {nums[0]}
+        for n in nums[1:]:
+            if n in table:
+                return True
+            table.add(n)
+        return False
